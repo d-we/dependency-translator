@@ -1,0 +1,37 @@
+[
+  {
+    "ubuntu" : {"name": "libyaml-dev", "repo": "TODO"}, 
+    "archlinux": {"name": "libyaml", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "g++", "repo": "TODO"}, 
+    "archlinux": {"name": "gcc", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "libcapstone-dev", "repo": "TODO"}, 
+    "archlinux": {"name": "capstone", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "libcapstone3", "repo": "TODO"}, 
+    "archlinux": {"name": "capstone", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "libssl-dev", "repo": "TODO"}, 
+    "archlinux": {"name": "openssl", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "g++", "repo": "TODO"}, 
+    "archlinux": {"name": "gcc", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "make", "repo": "TODO"}, 
+    "archlinux": {"name": "make", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  }
+]
