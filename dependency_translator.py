@@ -143,10 +143,6 @@ def print_installation_commands(packagelists):
             print(f"{bcolors.OKBLUE} # {cmd_aur}{bcolors.ENDC}")
         print("")
             
-        
-    
-    
-        
     
 def main():
     arg_dict = parse_arguments()
