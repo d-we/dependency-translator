@@ -86,7 +86,14 @@ def build_translation_index(packagetype_src):
     
 
 def remove_duplicates(package_list):
-    return list(set(package_list))
+    existing = list()
+    new_package_list = list()
+    for entry in package_list:
+        if entry.name not in existing:
+            new_package_list.append(entry)
+            existing.append(entry.name)
+            
+    return new_package_list
 
 
 def translate_package_list(package_list, packagetype_src, translation_index):
