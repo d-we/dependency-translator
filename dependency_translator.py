@@ -2,10 +2,12 @@
 
 import argparse
 import json
+import os
 
 VERBOSE = False
 
-TRANSLATION_FNAME = "./translations.json"
+SCRIPT_PATH = os.path.dirname(__file__)
+TRANSLATION_FNAME = SCRIPT_PATH + "/translations.json"
 
 INSTALLATION_COMMANDS = {
     "archlinux": "pacman -S",
@@ -92,7 +94,7 @@ def remove_duplicates(package_list):
         if entry.name not in existing:
             new_package_list.append(entry)
             existing.append(entry.name)
-            
+
     return new_package_list
 
 
@@ -103,8 +105,7 @@ def translate_package_list(package_list, packagetype_src, translation_index):
         log_debug(f"Translating {package_src}")
 
         if not package_src in translation_index:
-            log_warning(f"No known translation for package '{package_src}'")
-            log_warning("Skipping.")
+            log_warning(f"No known translation for package '{package_src}'. Skipping.")
             continue
             
         translation_entry = translation_index[package_src]
