@@ -123,6 +123,7 @@ def translate_package_list(package_list, packagetype_src, translation_index):
 def print_installation_commands(packagelists):
     for distro, packagelist in packagelists.items():
         cmd = INSTALLATION_COMMANDS[distro]
+        packagelist = remove_duplicates(packagelist)
 
         if distro == "archlinux":
             cmd_aur = INSTALLATION_COMMANDS["aur"]
