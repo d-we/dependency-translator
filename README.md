@@ -10,6 +10,11 @@ $ ./dependency_translator.py ubuntu "libyaml-dev make libssl-dev libcapstone-dev
  # pacman -S libyaml make openssl capstone
 ```
 
+## Usage
+The program requires 2 arguments
+- `<ubuntu|archlinux|nix>`: Specifies from which distro the given package list stems from
+- `<package-list>`: The package list that should be translated
+
 
 
 ## Future Ideas
