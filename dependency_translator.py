@@ -13,7 +13,7 @@ INSTALLATION_COMMANDS = {
     "archlinux": "pacman -S",
     "aur": "yay -S",
     "ubuntu": "apt install",
-    "nix": "niv-env -i",
+    "nix": "nix-env -i",
 }
 
 class Translation:
@@ -157,7 +157,6 @@ def print_installation_commands(packagelists):
             
     
 def main():
-    # TODO(dwe): bugfix -> multiple same keys are not processes correctly but overwriten
     arg_dict = parse_arguments()
 
     if arg_dict["verbose"]:
@@ -169,7 +168,6 @@ def main():
         
     translation_index = build_translation_index(packagetype_src)
 
-    #print(json.dumps(translation_index, indent=2))
     resulting_packagelists = translate_package_list(package_list_src, 
                                                     packagetype_src, 
                                                     translation_index)

@@ -5,6 +5,21 @@
     "nix": {"name": "TODO", "repo": "TODO"}
   },
   {
+    "ubuntu" : {"name": "build-essential", "repo": "TODO"}, 
+    "archlinux": {"name": "gcc", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "build-essential", "repo": "TODO"}, 
+    "archlinux": {"name": "make", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "build-essential", "repo": "TODO"}, 
+    "archlinux": {"name": "dpkg", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
     "ubuntu" : {"name": "g++", "repo": "TODO"}, 
     "archlinux": {"name": "gcc", "repo": "TODO", "AUR": false},
     "nix": {"name": "TODO", "repo": "TODO"}
@@ -27,6 +42,41 @@
   {
     "ubuntu" : {"name": "g++", "repo": "TODO"}, 
     "archlinux": {"name": "gcc", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "socat", "repo": "TODO"}, 
+    "archlinux": {"name": "socat", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "git", "repo": "TODO"}, 
+    "archlinux": {"name": "git", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "wget", "repo": "TODO"}, 
+    "archlinux": {"name": "wget", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "flex", "repo": "TODO"}, 
+    "archlinux": {"name": "flex", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "unzip", "repo": "TODO"}, 
+    "archlinux": {"name": "unzip", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "libncurses-dev", "repo": "TODO"}, 
+    "archlinux": {"name": "ncurses", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "bison", "repo": "TODO"}, 
+    "archlinux": {"name": "bison", "repo": "TODO", "AUR": false},
     "nix": {"name": "TODO", "repo": "TODO"}
   },
   {
