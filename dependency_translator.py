@@ -81,7 +81,9 @@ def build_translation_index(packagetype_src):
     translation_index = dict()
     for entry in translations_json:
         key = entry[packagetype_src]["name"]
-        translation_index[key] = entry
+        if key not in translation_index:
+            translation_index[key] = list()
+        translation_index[key].append(entry)
             
     log_debug(f"Translation index built.")
     return translation_index
@@ -108,22 +110,23 @@ def translate_package_list(package_list, packagetype_src, translation_index):
             log_warning(f"No known translation for package '{package_src}'. Skipping.")
             continue
             
-        translation_entry = translation_index[package_src]
-        for distro in translation_entry:
-            if distro == packagetype_src:
-                # we do not need to translate to the original
-                continue
+        translation_entries = translation_index[package_src]
+        for translation_entry in translation_entries:
+            for distro in translation_entry:
+                if distro == packagetype_src:
+                    # we do not need to translate to the original
+                    continue
 
-            if distro not in translated_packages:
-                translated_packages[distro] = list()
-            
-            translation = Translation()
-            translation.name = translation_entry[distro]["name"]
-            translation.repo = translation_entry[distro]["repo"]
-            if distro == "archlinux":
-                translation.aur = translation_entry["archlinux"]["AUR"]
+                if distro not in translated_packages:
+                    translated_packages[distro] = list()
 
-            translated_packages[distro].append(translation)
+                translation = Translation()
+                translation.name = translation_entry[distro]["name"]
+                translation.repo = translation_entry[distro]["repo"]
+                if distro == "archlinux":
+                    translation.aur = translation_entry["archlinux"]["AUR"]
+
+                translated_packages[distro].append(translation)
             
     return translated_packages
 
@@ -154,6 +157,7 @@ def print_installation_commands(packagelists):
             
     
 def main():
+    # TODO(dwe): bugfix -> multiple same keys are not processes correctly but overwriten
     arg_dict = parse_arguments()
 
     if arg_dict["verbose"]:
