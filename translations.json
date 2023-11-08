@@ -80,6 +80,21 @@
     "nix": {"name": "TODO", "repo": "TODO"}
   },
   {
+    "ubuntu" : {"name": "uuid-runtime", "repo": "TODO"}, 
+    "archlinux": {"name": "util-linux", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "grub-pc", "repo": "TODO"}, 
+    "archlinux": {"name": "grub", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
+    "ubuntu" : {"name": "grub-efi-amd64-bin", "repo": "TODO"}, 
+    "archlinux": {"name": "grub", "repo": "TODO", "AUR": false},
+    "nix": {"name": "TODO", "repo": "TODO"}
+  },
+  {
     "ubuntu" : {"name": "make", "repo": "TODO"}, 
     "archlinux": {"name": "make", "repo": "TODO", "AUR": false},
     "nix": {"name": "TODO", "repo": "TODO"}
